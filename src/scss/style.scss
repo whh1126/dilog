@@ -1,0 +1,33 @@
+@import "_minix.scss";
+@import "common.scss";
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    width: 100%;
+    height: pxTorem(44px);
+    background: #ccc;
+    @include box_flex;
+    justify-content: space-around;
+    align-items: center;
+    .left {
+        width: 50%;
+        i.icon {
+            font-size: pxTorem(15px);
+        }
+    }
+    .right {
+        width: 50%;
+        h3 {
+            font-size: pxTorem(15px);
+        }
+    }
+}
