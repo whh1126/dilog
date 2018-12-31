@@ -9,6 +9,8 @@ body {
 .wrapper {
     width: 100%;
     height: 100%;
+    flex-direction: column;
+    position: relative;
 }
 
 header {
@@ -28,6 +30,76 @@ header {
         width: 50%;
         h3 {
             font-size: pxTorem(15px);
+        }
+    }
+}
+
+section {
+    width: 100%;
+    flex: 1;
+    .title {
+        width: 100%;
+        @include box_flex;
+        font-size: pxTorem(15px);
+        justify-content: space-around;
+        padding: pxTorem(14px);
+        @include sizing;
+        .zuo {
+            width: 80%;
+            p {
+                font-size: pxTorem(14px);
+            }
+        }
+        .you {
+            width: 20%;
+            @include box_flex;
+            padding: pxTorem(5px);
+            @include sizing;
+            i.icon {
+                font-size: pxTorem(14px);
+            }
+        }
+    }
+    .mask {
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, .5);
+        position: fixed;
+        top: 0;
+        left: 0;
+        .conent {
+            width: pxTorem(300px);
+            height: pxTorem(200px);
+            background: #fff;
+            position: relative;
+            margin-left: pxTorem(30px);
+            margin-top: pxTorem(150px);
+            border-radius: pxTorem(6px);
+            padding: pxTorem(5px);
+            @include sizing;
+            h3 {
+                font-size: pxTorem(14px);
+                text-align: center;
+            }
+            div {
+                font-size: pxTorem(15px);
+                input {
+                    width: 100%;
+                    background: #ccc;
+                    flex: 1;
+                    text-align: center;
+                }
+                #reset {
+                    font-size: pxTorem(15px);
+                    margin-left: pxTorem(70px);
+                    cursor: pointer;
+                }
+                #save {
+                    font-size: pxTorem(15px);
+                    margin-left: pxTorem(70px);
+                    cursor: pointer;
+                }
+            }
         }
     }
 }
