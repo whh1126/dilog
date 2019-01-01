@@ -1,6 +1,9 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var webserver = require('gulp-webserver');
+var concat = require('gulp-concat');
+var uglify = require('gulp-uglify');
+var clean = require('gulp-clean-css');
 var fs = require('fs');
 var path = require('path');
 var url = require('url');
@@ -8,6 +11,7 @@ var url = require('url');
 gulp.task('sass', function() {
         return gulp.src('./src/scss/*.scss')
             .pipe(sass())
+            .pipe(concat('all.css'))
             .pipe(gulp.dest('./src/css/'))
 
     })
@@ -34,3 +38,16 @@ gulp.task('webserver', function() {
     })
     //开发环境
 gulp.task('dev', gulp.series('sass', 'webserver', 'watch'));
+//合并压缩js
+gulp.task('minjs', function() {
+        return gulp.src('./src/js/*.js')
+            .pipe(concat('all.js'))
+            .pipe(uglify())
+            .pipe(gulp.dest('./src/build/js/'))
+    })
+    //压缩css
+gulp.task('cssmin', function() {
+    return gulp.src('./src/css/*/css')
+        .pipe(clean())
+        .pipe('./src/build/css')
+})

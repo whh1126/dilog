@@ -1,1 +1,316 @@
-a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,input,ins,kbd,label,legend,li,mark,menu,nav,object,ol,p,pre,q,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:none;outline:0;font-family:STHeitiSC-Light;font:inherit;vertical-align:baseline}body,div,fieldset,form,h1,h2,h3,h4,h5,h6,html,p{-webkit-text-size-adjust:none}body,html{width:100%;height:100%}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{font-family:arial,sans-serif}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}a,ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}img{display:inline-block}input,textarea{border:none;background:0 0;outline:0;-webkit-appearance:none}*{-webkit-tap-highlight-color:transparent;-moz-tap-highlight-color:transparent;-ms-tap-highlight-color:transparent;-o-tap-highlight-color:transparent}html{font-size:37.5px}body,html{width:100%;height:100%}.wrapper{width:100%;height:100%;flex-direction:column;position:relative}header{width:100%;height:1.17333rem;background:#ccc;display:flex;display:-webkit-flex;justify-content:space-around;align-items:center}header .left{width:50%}header .left i.icon{font-size:.4rem}header .right{width:50%}header .right h3{font-size:.4rem}section{width:100%;flex:1}section .title{width:100%;display:flex;display:-webkit-flex;font-size:.4rem;justify-content:space-around;padding:.37333rem;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-ms-box-sizing:border-box;-o-box-sizing:border-box;box-sizing:border-box}section .title .zuo{width:80%}section .title .zuo p{font-size:.37333rem}section .title .you{width:20%;display:flex;display:-webkit-flex;padding:.13333rem;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-ms-box-sizing:border-box;-o-box-sizing:border-box;box-sizing:border-box}section .title .you i.icon{font-size:.37333rem}section .mask{width:100%;height:100%;background:rgba(0,0,0,.5);position:fixed;top:0;left:0}section .mask .conent{width:8rem;height:5.33333rem;background:#fff;position:relative;margin-left:.8rem;margin-top:4rem;border-radius:.16rem;padding:.13333rem;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-ms-box-sizing:border-box;-o-box-sizing:border-box;box-sizing:border-box}section .mask .conent h3{font-size:.37333rem;text-align:center}section .mask .conent div{font-size:.4rem}section .mask .conent div input{width:100%;background:#ccc;flex:1;text-align:center}section .mask .conent div #reset{font-size:.4rem;margin-left:1.86667rem;cursor:pointer}section .mask .conent div #save{font-size:.4rem;margin-left:1.86667rem;cursor:pointer}
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+input,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+p,
+pre,
+q,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: 0;
+    font-family: STHeitiSC-Light;
+    font: inherit;
+    vertical-align: baseline
+}
+
+body,
+div,
+fieldset,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+html,
+p {
+    -webkit-text-size-adjust: none
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block
+}
+
+body {
+    font-family: arial, sans-serif
+}
+
+ol,
+ul {
+    list-style: none
+}
+
+blockquote,
+q {
+    quotes: none
+}
+
+blockquote:after,
+blockquote:before,
+q:after,
+q:before {
+    content: '';
+    content: none
+}
+
+a,
+ins {
+    text-decoration: none
+}
+
+del {
+    text-decoration: line-through
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+img {
+    display: inline-block
+}
+
+input,
+textarea {
+    border: none;
+    background: 0 0;
+    outline: 0;
+    -webkit-appearance: none
+}
+
+* {
+    -webkit-tap-highlight-color: transparent;
+    -moz-tap-highlight-color: transparent;
+    -ms-tap-highlight-color: transparent;
+    -o-tap-highlight-color: transparent
+}
+
+html {
+    font-size: 37.5px
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    position: relative
+}
+
+header {
+    width: 100%;
+    height: 1.17333rem;
+    background: #ccc;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-around;
+    align-items: center
+}
+
+header .left {
+    width: 50%
+}
+
+header .left i.icon {
+    font-size: .4rem
+}
+
+header .right {
+    width: 50%
+}
+
+header .right h3 {
+    font-size: .4rem
+}
+
+section {
+    width: 100%;
+    flex: 1
+}
+
+section .title {
+    width: 100%;
+    display: flex;
+    display: -webkit-flex;
+    font-size: .4rem;
+    justify-content: space-around;
+    padding: .37333rem;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+section .title .zuo {
+    width: 80%
+}
+
+section .title .zuo p {
+    font-size: .37333rem
+}
+
+section .title .you {
+    width: 20%;
+    display: flex;
+    display: -webkit-flex;
+    padding: .13333rem;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+section .title .you i.icon {
+    font-size: .37333rem
+}
+
+section .mask {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .5);
+    position: fixed;
+    top: 0;
+    left: 0
+}
+
+section .mask .conent {
+    width: 8rem;
+    height: 5.33333rem;
+    background: #fff;
+    position: relative;
+    margin-left: .8rem;
+    margin-top: 4rem;
+    border-radius: .16rem;
+    padding: .13333rem;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+section .mask .conent h3 {
+    font-size: .37333rem;
+    text-align: center
+}
+
+section .mask .conent div {
+    font-size: .4rem
+}
+
+section .mask .conent div input {
+    width: 100%;
+    background: #ccc;
+    flex: 1;
+    text-align: center
+}
+
+section .mask .conent div #reset {
+    font-size: .4rem;
+    margin-left: 1.86667rem;
+    cursor: pointer
+}
+
+section .mask .conent div #save {
+    font-size: .4rem;
+    margin-left: 1.86667rem;
+    cursor: pointer
+}
