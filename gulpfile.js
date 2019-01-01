@@ -49,5 +49,5 @@ gulp.task('minjs', function() {
 gulp.task('cssmin', function() {
     return gulp.src('./src/css/*/css')
         .pipe(clean())
-        .pipe('./src/build/css')
+        .pipe(gulp.dest('./src/build/css'))
 })
